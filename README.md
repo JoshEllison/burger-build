@@ -8,7 +8,6 @@ This is a simple react demo project
 ## What I used
 - React 16 / Jsx pages
 - React Router
-- React-Thunk
 - Redux
 - Axios
 - Webpack
