@@ -54,19 +54,19 @@ class ContactData extends Component {
         valid: false,
         touched: false
       },
-      country: {
-        elementType: "input",
-        elementConfig: {
-          type: "text",
-          placeholder: "Country"
-        },
-        value: "",
-        validation: {
-          required: true
-        },
-        valid: false,
-        touched: false
-      },
+      // country: {
+      //   elementType: "input",
+      //   elementConfig: {
+      //     type: "text",
+      //     placeholder: "Country"
+      //   },
+      //   value: "",
+      //   validation: {
+      //     required: true
+      //   },
+      //   valid: false,
+      //   touched: false
+      // },
       email: {
         elementType: "input",
         elementConfig: {
@@ -89,7 +89,7 @@ class ContactData extends Component {
             { value: "cheapest", displayValue: "Cheapest" }
           ]
         },
-        value: "",
+        value: "fastest",
         validation: {},
         valid: true
       }
@@ -210,9 +210,9 @@ class ContactData extends Component {
 
 const mapStateToProps = state => {
   return {
-    ings: state.ingredients,
-    price: state.totalPrice,
-    loading: state.loading
+    ings: state.burgerBuilder.ingredients,
+    price: state.burgerBuilder.totalPrice,
+    loading: state.order.loading
   };
 };
 
