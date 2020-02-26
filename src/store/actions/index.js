@@ -1,3 +1,8 @@
-export { addIngredient, removeIngredient } from "./burgerBuilder";
+export {
+  addIngredient,
+  removeIngredient,
+  initIngredients
+} from "./burgerBuilder";
 
-export {} from "./order";
+// new handling of axios
+export { purchaseBurger } from "./order";
