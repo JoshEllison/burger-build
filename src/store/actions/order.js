@@ -86,4 +86,3 @@ export const fetchOrders = () => {
       });
   };
 };
-// add delete button later
