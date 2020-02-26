@@ -6,3 +6,6 @@ export {
 
 // new handling of axios
 export { purchaseBurger, purchaseInit, fetchOrders } from "./order";
+
+// auth method
+export { auth } from "./auth";
