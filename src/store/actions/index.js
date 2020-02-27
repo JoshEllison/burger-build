@@ -2,10 +2,17 @@ export {
   addIngredient,
   removeIngredient,
   initIngredients
-} from "./burgerBuilder";
+} from './burgerBuilder';
 
-// new handling of axios
-export { purchaseBurger, purchaseInit, fetchOrders } from "./order";
+export {
+  purchaseBurger,
+  purchaseInit,
+  fetchOrders
+} from './order';
 
-// auth method
-export { auth, logout, setAuthRedirectPath } from "./auth";
+export {
+  auth,
+  logout,
+  setAuthRedirectPath,
+  authCheckState
+} from './auth';

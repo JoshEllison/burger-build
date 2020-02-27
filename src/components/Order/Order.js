@@ -6,10 +6,12 @@ const order = props => {
   const ingredients = [];
 
   for (let ingredientName in props.ingredients) {
-    ingredients.push({
-      name: ingredientName,
-      amount: props.ingredients[ingredientName]
-    });
+    ingredients.push(
+      {
+        name: ingredientName,
+        amount: props.ingredients[ingredientName]
+      }
+    );
   }
 
   const ingredientOutput = ingredients.map(ig => {
@@ -22,9 +24,7 @@ const order = props => {
           border: "1px solid #ccc",
           padding: "5px"
         }}
-        key={ig.name}
-      >
-        {ig.name} ({ig.amount}){" "}
+        key={ig.name}>{ig.name} ({ig.amount})
       </span>
     );
   });

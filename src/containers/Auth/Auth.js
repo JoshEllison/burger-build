@@ -157,15 +157,16 @@ class Auth extends Component {
           {form}
           <Button btnType="Success">SUBMIT</Button>
         </form>
-        <Button clicked={this.switchAuthModeHndler} btnType="Danger">
-          SWITCH TO {this.state.isSignup ? "SIGN IN" : "SIGN UP"}
+        <Button
+          clicked={this.switchAuthModeHndler}
+          btnType="Danger">SWITCH TO {this.state.isSignup ? "SIGN IN" : "SIGN UP"}
         </Button>
       </div>
     );
   }
 }
 
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
   return {
     loading: state.auth.loading,
     error: state.auth.error,
@@ -177,8 +178,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    onAuth: (email, password, isSignup) =>
-      dispatch(actions.auth(email, password, isSignup)),
+    onAuth: (email, password, isSignup) => dispatch(actions.auth(email, password, isSignup)),
     onSetAuthRedirectPath: () => dispatch(actions.setAuthRedirectPath("/"))
   };
 };
