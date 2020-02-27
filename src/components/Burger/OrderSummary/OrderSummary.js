@@ -3,9 +3,11 @@ import React, { Component } from 'react';
 import Auxiliary from '../../../hiorderc/Auxiliary/Auxiliary';
 import Button from '../../UI/Button/Button';
 
+
+// could be a functional component
 class OrderSummary extends Component {
 
-    render () {
+    render() {
         const ingredientSummary = Object.keys(this.props.ingredients)
             .map(igKey => {
                 return (
@@ -25,7 +27,7 @@ class OrderSummary extends Component {
                 <Button btnType='Danger' clicked={this.props.purchaseCancelled}>CANCEL</Button>
                 <Button btnType='Success' clicked={this.props.purchaseContinued}>CONTINUE</Button>
             </Auxiliary>
-            );
+        );
     }
 }
 
