@@ -5,7 +5,7 @@ This is a simple react demo project where a user can create a burger and order i
 The goals of building this App were to: 
 - Create modularized React components and access them using Redux and the Redux middleware Thunk. 
 - Handle authentification with tokens and local storage opposed to dropping in a pre build authentification option from firebase. 
-- Utilize the power of asynchronous code and promises.
+- Utilize the power of asynchronous code.
 - Design tests for components, containers, and reducers using Jest and Enzyme.
  
 ## Technology Used
